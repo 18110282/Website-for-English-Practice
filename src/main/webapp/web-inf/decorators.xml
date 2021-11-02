@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding ="UTF-8"?>
+
+<!-- default forder chua pattern layout(header, menu, footer) cua admin + client -->
+<decorators defaultdir="/decorators">
+
+    <!-- Nhung URL k su dung template cua decorators-->
+<!--    <excludes>-->
+<!--        <pattern>/404-page.html</pattern>-->
+<!--        <pattern>/ajax*</pattern>-->
+<!--        <pattern>/admin/login</pattern>-->
+<!--        <pattern>/admin/logout</pattern>-->
+<!--        <pattern>/shipper/logout</pattern>-->
+<!--        <pattern>/shipper/login</pattern>-->
+
+<!--    </excludes>-->
+<!--    &lt;!&ndash; decorator dua vao ten cua URL de apply giao dien tuong ung cho page &ndash;&gt;-->
+<!--    &lt;!&ndash; load trang admin &ndash;&gt;-->
+<!--    <decorator name="admin" page="admin.jsp">-->
+<!--        <pattern>/admin*</pattern>-->
+<!--    </decorator>-->
+
+<!--    <decorator name="web" page="web.jsp">-->
+<!--        <pattern>/web*</pattern>-->
+<!--    </decorator>-->
+<!--    -->
+<!--    <decorator>-->
+
+<!--    </decorator>-->
+
+
+</decorators>
