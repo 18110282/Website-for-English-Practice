@@ -1,7 +1,5 @@
 package ute.isclass.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -11,7 +9,7 @@ public class UserEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "userID")
-    private int userid;
+    private int userID;
 
     @Column(name = "username")
     private String username;
@@ -29,12 +27,12 @@ public class UserEntity implements Serializable {
     @JoinColumn(name = "roleID")
     private RoleEntity roleEntity;
 
-    public int getUserid() {
-        return userid;
+    public int getUserID() {
+        return userID;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUserID(int userID) {
+        this.userID = userID;
     }
 
     public String getUsername() {

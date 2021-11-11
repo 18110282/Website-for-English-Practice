@@ -10,7 +10,7 @@ public class RoleEntity implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "roleID")
-    private Integer roleId;
+    private Integer roleID;
 
     @Column(name = "rolename")
     private String roleName;
@@ -18,12 +18,12 @@ public class RoleEntity implements Serializable{
     @OneToMany(mappedBy = "roleEntity", fetch = FetchType.LAZY)
     private List<UserEntity> userEntityList;
 
-    public Integer getRoleId() {
-        return roleId;
+    public Integer getRoleID() {
+        return roleID;
     }
 
-    public void setRoleId(Integer roleId) {
-        this.roleId = roleId;
+    public void setRoleID(Integer roleID) {
+        this.roleID = roleID;
     }
 
     public String getRoleName() {

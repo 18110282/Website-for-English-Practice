@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">123456hieu</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/websitetoeic?autoReconnect=true&amp;characterEncoding=utf-8&amp;useUnicode=true&amp;connectionCollation=utf8_unicode_ci&amp;characterSetResults=utf8</property>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">123456hieu</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/websitetoeic?autoReconnect=true&amp;characterEncoding=utf-8&amp;useUnicode=true&amp;connectionCollation=utf8_unicode_ci&amp;characterSetResults=utf8&amp;useSSL=false</property>
+        <!-- Xem cac lenh truy van sql -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="show_sql">true</property>
+        <!-- Map -->
         <mapping class="ute.isclass.entity.RoleEntity" />
         <mapping class="ute.isclass.entity.UserEntity" />
-        <mapping class="ute.isclass.entity.ContentsGrammarEntity" />
-        <mapping class="ute.isclass.entity.ExaminationEntity" />
-        <mapping class="ute.isclass.entity.ExamquestionEntity" />
-        <mapping class="ute.isclass.entity.HistoryExamEntity" />
-        <mapping class="ute.isclass.entity.MyWordsEntity" />
-        <mapping class="ute.isclass.entity.ResultExaminationEntity" />
-        <mapping class="ute.isclass.entity.TopicGrammarEntity" />
-        <mapping class="ute.isclass.entity.TopicWordsEntity" />
-        <mapping class="ute.isclass.entity.WordsEntity" />
+<!--        <mapping class="ute.isclass.entity.ContentsGrammarEntity" />-->
+<!--        <mapping class="ute.isclass.entity.ExaminationEntity" />-->
+<!--        <mapping class="ute.isclass.entity.ExamquestionEntity" />-->
+<!--        <mapping class="ute.isclass.entity.HistoryExamEntity" />-->
+<!--        <mapping class="ute.isclass.entity.MyWordsEntity" />-->
+<!--        <mapping class="ute.isclass.entity.ResultExaminationEntity" />-->
+<!--        <mapping class="ute.isclass.entity.TopicGrammarEntity" />-->
+<!--        <mapping class="ute.isclass.entity.TopicWordsEntity" />-->
+<!--        <mapping class="ute.isclass.entity.WordsEntity" />-->
     </session-factory>
 </hibernate-configuration>

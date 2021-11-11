@@ -53,7 +53,7 @@ Create table Words
 	foreign key(topicwordID) references Topicwords(topicwordID) on delete cascade
 );
 
--- Tao bang de nguoi dung them tu vung vao danh muc ua thich 	Myword (userid, wordID)
+-- Tao bang de nguoi dung them tu vung vao danh muc ua thich 	Myword (userID, wordID)
 Create table Mywords
 (
 	userID int(11),
