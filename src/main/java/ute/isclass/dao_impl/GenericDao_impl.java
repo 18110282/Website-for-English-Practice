@@ -13,9 +13,9 @@ import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericDao_Impl<ID extends Integer,T> implements GenericDao<ID,T> {
+public class GenericDao_impl<ID extends Integer,T> implements GenericDao<ID,T> {
     protected final Class<T> persistenceClass;
-    public GenericDao_Impl(){
+    public GenericDao_impl(){
         this.persistenceClass = (Class<T>) ((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[1];
     }
     public String getPersistenceClassName(){

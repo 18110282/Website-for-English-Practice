@@ -30,9 +30,9 @@
     <link rel="stylesheet" href="<c:url value="/template/admin/sweetalert/sweetalert2.min.css"/>">
 
     <%--datatable--%>
-    <%--<link href="<c:url value="/template/data-table/media/css/dataTables.bootstrap4_v4.6.1.min.css"/>" rel="stylesheet">
-    <script type="text/javascript" src="<c:url value="/template/data-table/data_table-1.0.0.js"/>"></script>
-    <script type="text/javascript" src="<c:url value="/template/data-table/data-table-bootstrap4-1.0.0.js"/>"></script>--%>
+    <link href="<c:url value="/template/admin/data-table/media/css/dataTables.bootstrap4_v4.6.1.min.css"/>" rel="stylesheet">
+    <script type="text/javascript" src="<c:url value="/template/admin/data-table/data_table-1.0.0.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/template/admin/data-table/data-table-bootstrap4-1.0.0.js"/>"></script>
     <%--ckfinder--%>
     <script type="text/javascript" src="<c:url value="/ckfinder/ckfinder.js"/>"></script>
     <dec:head />

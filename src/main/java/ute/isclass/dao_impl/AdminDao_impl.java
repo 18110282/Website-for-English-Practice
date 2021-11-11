@@ -8,7 +8,7 @@ import ute.isclass.dao.AdminDao;
 import ute.isclass.entity.UserEntity;
 import ute.isclass.utils.HibernateUtil;
 
-public class AdminDao_Impl extends GenericDao_Impl<Integer, UserEntity> implements AdminDao{
+public class AdminDao_impl extends GenericDao_impl<Integer, UserEntity> implements AdminDao{
 
     public boolean checkAdminLogin(String username, String password) {
         boolean exist = false;
@@ -26,8 +26,8 @@ public class AdminDao_Impl extends GenericDao_Impl<Integer, UserEntity> implemen
             query.setParameter("value2", password);
             query.setParameter("value3", 1);
             a = query.list().get(0);
-            int c =  Integer.parseInt((a).toString());
-            if(c == 1)
+            int check =  Integer.parseInt((a).toString());
+            if(check == 1)
             {
                 exist = true;
             }

@@ -28,7 +28,7 @@
             <ul class="nav ace-nav">
                 <li class="light-blue dropdown-modal">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        Welcome, ${login_name}
+                        Welcome, ${user_admin}
 
                     </a>
                     <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
@@ -41,8 +41,7 @@
                     </ul>
                 </li>
                 <li class="light-blue dropdown-modal">
-                    <c:url var="logoutUrl" value="/logout.html">
-                        <c:param name="action" value="logout"/>
+                    <c:url var="logoutUrl" value="/admin/logout">
                     </c:url>
                     <a href="${logoutUrl}">
                         <i class="ace-icon fa fa-power-off"></i>

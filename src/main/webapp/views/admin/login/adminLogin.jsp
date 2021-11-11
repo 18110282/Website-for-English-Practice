@@ -2,6 +2,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ include file="/common/taglib.jsp"%>
 <c:url value ="/template/admin/login" var="url"/>
+<c:url var="loginUrl" value="/admin/login">
+</c:url>
 <html>
 <head>
     <title>Admin Web Toeic</title>
@@ -30,14 +32,14 @@
                         <span class="fa fa-user-o"></span>
                     </div>
                     <h3 class="text-center mb-4">Admin Login</h3>
-                    <form action="#" class="login-form">
+                    <form action="${loginUrl}" class="login-form" method="post">
                         <div class="form-group">
-                            <input type="text" class="form-control rounded-left" placeholder="Username" required>
+                            <input type="text" class="form-control rounded-left" placeholder="Username" name="username" required>
                         </div>
                         <div class="form-group d-flex">
-                            <input type="password" class="form-control rounded-left" placeholder="Password" required>
+                            <input type="password" class="form-control rounded-left" placeholder="Password" name="password" required>
                         </div>
-                        <br>
+                        <div><b> <span style="color:#00d9e8"> ${errorMessage}</span></b></div>
                         <div class="form-group">
                             <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
                         </div>

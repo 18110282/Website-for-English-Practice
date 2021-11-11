@@ -4,17 +4,15 @@
 <decorators defaultdir="/decorator">
 
     <!-- Nhung URL k su dung template cua decorators-->
-<!--    <excludes>-->
-<!--        <pattern>/404-page.html</pattern>-->
-<!--        <pattern>/ajax*</pattern>-->
-<!--        <pattern>/admin/login</pattern>-->
-<!--        <pattern>/admin/logout</pattern>-->
-<!--        <pattern>/shipper/logout</pattern>-->
-<!--        <pattern>/shipper/login</pattern>-->
+    <excludes>
+        <pattern>/404-page.html</pattern>
+        <pattern>/ajax*</pattern>
+        <pattern>/admin/login*</pattern>
+        <pattern>/admin/logout*</pattern>
 
-<!--    </excludes>-->
-<!--    &lt;!&ndash; decorator dua vao ten cua URL de apply giao dien tuong ung cho page &ndash;&gt;-->
-<!--    &lt;!&ndash; load trang admin &ndash;&gt;-->
+    </excludes>
+    <!-- decorator dua vao ten cua URL de apply giao dien tuong ung cho page -->
+    <!-- load trang admin -->
     <decorator name="admin" page="admin.jsp">
         <pattern>/admin*</pattern>
     </decorator>
